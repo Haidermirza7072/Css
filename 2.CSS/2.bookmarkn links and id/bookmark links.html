@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0078ff, #00c6ff);
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 15px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: yellow;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0078ff;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .image-slider {
+      display: flex;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+
+    .image-slider img {
+      height: 200px;
+      width: 300px;
+      border-radius: 10px;
+      margin-right: 15px;
+      animation: slide 20s linear infinite;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #0078ff, #00c6ff);
+      color: white;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Bookmark Links Demo 🌟</h1>
+    <nav>
+      <ul>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#exercise">Exercise</a></li>
+        <li><a href="#cartoons">Cartoons</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cars Section -->
+  <section id="cars">
+    <h2>🚗 Cars</h2>
+    <div class="image-slider">
+      <img src="img/car.jpg" alt="Car 1">
+      <img src="img/car3.jpg" alt="Car 2">
+      <img src="img/car4.webp" alt="Car 3">
+      <img src="img/red car.webp" alt="Car 4">
+      <img src="img/car3.jpg" alt="Car 5">
+    </div>
+    <p>
+      A car is a motor vehicle with wheels used for transportation. Most definitions say they run primarily on roads,
+      seat one to eight people, and mainly transport people rather than cargo. The modern car was invented in 1886 by
+      Carl Benz. Cars are now essential for mobility and comfort in modern life.
+    </p>
+  </section>
+
+  <!-- Exercise Section -->
+  <section id="exercise">
+    <h2>💪 Exercise</h2>
+    <div class="image-slider">
+        <img src="img/exercise.jpg" alt="Workout">
+        <img src="img/exercise1.avif" alt="Workout 1">
+      <img src="img/exercise2.jpg" alt="Workout 2">
+      <img src="img/exercise3.jpg" alt="Workout 3">
+      <img src="img/exercise4.jpg" alt="Workout 4">
+    </div>
+    <p>
+      Exercise improves your strength, stamina, and overall health. Regular workouts help prevent disease, reduce
+      stress, and improve mental focus. From cardio to strength training, every type of exercise contributes to a
+      healthier body and mind.
+    </p>
+  </section>
+
+  <!-- Cartoon Section -->
+  <section id="cartoons">
+    <h2>🎨 Cartoons</h2>
+    <div class="image-slider">
+      <img src="img/peppa pig.webp" alt="Peppa Pig">
+      <img src="img/dora.jpg" alt="Dora">
+      <img src="img/courage1.jpg" alt="Courage">
+      <img src="img/jonny bravo.jpg" alt="Johnny Bravo">
+      <img src="img/courage2.jpg" alt="Courage 2">
+    </div>
+    <p>
+      Cartoons are a form of visual storytelling that combine humor, creativity, and life lessons. From Peppa Pig to
+      Courage the Cowardly Dog, these shows entertain and teach generations of viewers valuable morals through colorful
+      animation and imaginative stories.
+    </p>
+  </section>
+
+  <footer>
+    <p>⭐ The End — Thanks for Visiting! ⭐</p>
+  </footer>
+
+</body>
+</html>
