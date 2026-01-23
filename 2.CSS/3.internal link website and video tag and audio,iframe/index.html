@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media & Gallery Showcase</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s, background 0.3s;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: white;
+      color: #222;
+    }
+
+    /* Image Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* YouTube section */
+    .video-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    iframe:hover {
+      transform: scale(1.05);
+    }
+
+    /* Local videos */
+    .local-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    video {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      height: 200px;
+    }
+
+    video:hover {
+      transform: scale(1.03);
+    }
+
+    /* Audio */
+    .audio-section {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    audio {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="haircut.html">HAIRCUT</a>
+    <a href="car.html">CAR</a>
+    <a href="game.html">GAME</a>
+  </nav>
+
+  <h1>🎨 Media & Gallery Showcase</h1>
+  <p>Images, YouTube videos, local videos, and audio files all in one place!</p>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img src="images/spiderman.jpg" alt="Spiderman">
+    <img src="images/cristiyano.jpg" alt="Cristiyano Ronaldo">
+    <img src="images/hitman.jpg" alt="Hitman">
+    <img src="images/peakyblinder.jpg" alt="Peaky Blinder">
+  </div>
+
+  <!-- YouTube Videos -->
+  <h2>🎥 YouTube Videos</h2>
+  <div class="video-section">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mf_4oP9EQ7U?si=4846CoMKFpsEx74u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/LdMoYYeW9g8" title="YouTube video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <!-- Local Videos -->
+  <h2>🎞️ Local Videos</h2>
+  <div class="local-videos">
+    <video controls autoplay muted loop>
+      <source src="images/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video src="images/tu.mp4" controls autoplay muted loop></video>
+    <video src="images/video.mp4" controls poster="images/spiderman.jpg"></video>
+  </div>
+
+  <!-- Audio Section -->
+  <div class="audio-section">
+    <h2>🎧 Audio Files</h2>
+    <audio src="images/yeah-boy-114748.mp3" controls></audio>
+    <audio src="images/tu.mp4" controls></audio>
+  </div>
+
+</body>
+</html>
